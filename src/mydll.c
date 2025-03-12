@@ -76,3 +76,36 @@ int MyDLLRemove(DLL* list, uint16_t key) {
 
     return -1; // Key not found
 }
+
+DLLNode* MyDLLFind(DLL* list, uint16_t key) {
+    DLLNode* current = list->head;
+
+    while (current) {
+        if (current->key == key) {
+            return current; // Found the node
+        }
+        current = current->next;
+    }
+
+    return NULL; // Key not found
+}
+
+DLLNode* MyDLLFindNext(DLL* list, uint16_t key) {
+    DLLNode* current = MyDLLFind(list, key);
+
+    if (current && current->next) {
+        return current->next; // Return the next node
+    }
+
+    return NULL; // Either key was not found or it's the last node
+}
+
+DLLNode* MyDLLFindPrevious(DLL* list, uint16_t key) {
+    DLLNode* current = MyDLLFind(list, key);
+
+    if (current && current->prev) {
+        return current->prev; // Return the previous node
+    }
+
+    return NULL; // Either key was not found or it's the first node
+}

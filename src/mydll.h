@@ -29,4 +29,10 @@ int MyDLLInsert(DLL* list, uint16_t key, unsigned char* data);
 
 int MyDLLRemove(DLL* list, uint16_t key);
 
+DLLNode* MyDLLFind(DLL* list, uint16_t key);
+
+DLLNode* MyDLLFindNext(DLL* list, uint16_t key);
+
+DLLNode* MyDLLFindPrevious(DLL* list, uint16_t key);
+
 #endif
