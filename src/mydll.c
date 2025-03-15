@@ -1,4 +1,14 @@
-#include "mydll.h"
+/** @file mydll.c
+ * @brief mydll.c the file for the C module that implements a Doubly Linked List 
+ *
+ * 
+ * 
+ * @author Enzo DOS SANTOS
+ * @date 16 Mar 2025
+ * @bug No known bugs.
+ */
+
+ #include "mydll.h"
 
 void MyDLLInit(DLL* list) {
     list->head = NULL;
