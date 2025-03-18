@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\5g FER\embedded\Assignment1\SETR_Assignments\build\CMakeFiles" "C:\5g FER\embedded\Assignment1\SETR_Assignments\build\\CMakeFiles\progress.marks"
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
+	cd /d C:\5GFER~1\embedded\ASSIGN~1\SETR_A~1\build && $(CMAKE_COMMAND) -E cmake_progress_start "C:\5g FER\embedded\Assignment1\SETR_Assignments\build\CMakeFiles" "C:\5g FER\embedded\Assignment1\SETR_Assignments\build\MyDLL\\CMakeFiles\progress.marks"
+	cd /d C:\5GFER~1\embedded\ASSIGN~1\SETR_A~1\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 MyDLL/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\5g FER\embedded\Assignment1\SETR_Assignments\build\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 clean
+	cd /d C:\5GFER~1\embedded\ASSIGN~1\SETR_A~1\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 MyDLL/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,68 +102,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d C:\5GFER~1\embedded\ASSIGN~1\SETR_A~1\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 MyDLL/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d C:\5GFER~1\embedded\ASSIGN~1\SETR_A~1\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 MyDLL/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\5GFER~1\embedded\ASSIGN~1\SETR_A~1\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named dll
+# Convenience name for target.
+MyDLL/CMakeFiles/MyDLLLib.dir/rule:
+	cd /d C:\5GFER~1\embedded\ASSIGN~1\SETR_A~1\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 MyDLL/CMakeFiles/MyDLLLib.dir/rule
+.PHONY : MyDLL/CMakeFiles/MyDLLLib.dir/rule
 
-# Build rule for target.
-dll: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 dll
-.PHONY : dll
-
-# fast build rule for target.
-dll/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\dll.dir\build.make CMakeFiles/dll.dir/build
-.PHONY : dll/fast
-
-#=============================================================================
-# Target rules for targets named MyDLLLib
-
-# Build rule for target.
-MyDLLLib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 MyDLLLib
+# Convenience name for target.
+MyDLLLib: MyDLL/CMakeFiles/MyDLLLib.dir/rule
 .PHONY : MyDLLLib
 
 # fast build rule for target.
 MyDLLLib/fast:
-	$(MAKE) $(MAKESILENT) -f MyDLL\CMakeFiles\MyDLLLib.dir\build.make MyDLL/CMakeFiles/MyDLLLib.dir/build
+	cd /d C:\5GFER~1\embedded\ASSIGN~1\SETR_A~1\build && $(MAKE) $(MAKESILENT) -f MyDLL\CMakeFiles\MyDLLLib.dir\build.make MyDLL/CMakeFiles/MyDLLLib.dir/build
 .PHONY : MyDLLLib/fast
 
-src/main.obj: src/main.c.obj
-.PHONY : src/main.obj
+mydll.obj: mydll.c.obj
+.PHONY : mydll.obj
 
 # target to build an object file
-src/main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\dll.dir\build.make CMakeFiles/dll.dir/src/main.c.obj
-.PHONY : src/main.c.obj
+mydll.c.obj:
+	cd /d C:\5GFER~1\embedded\ASSIGN~1\SETR_A~1\build && $(MAKE) $(MAKESILENT) -f MyDLL\CMakeFiles\MyDLLLib.dir\build.make MyDLL/CMakeFiles/MyDLLLib.dir/mydll.c.obj
+.PHONY : mydll.c.obj
 
-src/main.i: src/main.c.i
-.PHONY : src/main.i
+mydll.i: mydll.c.i
+.PHONY : mydll.i
 
 # target to preprocess a source file
-src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\dll.dir\build.make CMakeFiles/dll.dir/src/main.c.i
-.PHONY : src/main.c.i
+mydll.c.i:
+	cd /d C:\5GFER~1\embedded\ASSIGN~1\SETR_A~1\build && $(MAKE) $(MAKESILENT) -f MyDLL\CMakeFiles\MyDLLLib.dir\build.make MyDLL/CMakeFiles/MyDLLLib.dir/mydll.c.i
+.PHONY : mydll.c.i
 
-src/main.s: src/main.c.s
-.PHONY : src/main.s
+mydll.s: mydll.c.s
+.PHONY : mydll.s
 
 # target to generate assembly for a file
-src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\dll.dir\build.make CMakeFiles/dll.dir/src/main.c.s
-.PHONY : src/main.c.s
+mydll.c.s:
+	cd /d C:\5GFER~1\embedded\ASSIGN~1\SETR_A~1\build && $(MAKE) $(MAKESILENT) -f MyDLL\CMakeFiles\MyDLLLib.dir\build.make MyDLL/CMakeFiles/MyDLLLib.dir/mydll.c.s
+.PHONY : mydll.c.s
 
 # Help Target
 help:
@@ -174,10 +162,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... MyDLLLib
-	@echo ... dll
-	@echo ... src/main.obj
-	@echo ... src/main.i
-	@echo ... src/main.s
+	@echo ... mydll.obj
+	@echo ... mydll.i
+	@echo ... mydll.s
 .PHONY : help
 
 
@@ -189,6 +176,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\5GFER~1\embedded\ASSIGN~1\SETR_A~1\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/5g FER/embedded/Assignment1/SETR_Assignments/src/main.c" "CMakeFiles/dll.dir/src/main.c.obj" "gcc" "CMakeFiles/dll.dir/src/main.c.obj.d"
+  "C:/5g FER/embedded/Assignment1/SETR_Assignments/MyDLL/mydll.c" "MyDLL/CMakeFiles/MyDLLLib.dir/mydll.c.obj" "gcc" "MyDLL/CMakeFiles/MyDLLLib.dir/mydll.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
