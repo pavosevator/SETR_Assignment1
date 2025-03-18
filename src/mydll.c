@@ -9,6 +9,7 @@
  */
 
  #include "mydll.h"
+ #include "string.h"
 
 void MyDLLInit(DLL* list) {
     list->head = NULL;
