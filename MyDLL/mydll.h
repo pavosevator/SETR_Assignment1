@@ -39,13 +39,13 @@ typedef struct {
 } DLL;
 
 /**
- * @brief Initializes the doubly linked list.
+ * @brief Initializes the doubly linked list by provinding a pointer to the DLL structure. 
  * @param list Pointer to the DLL structure.
  */
 void MyDLLInit(DLL* list);
 
 /**
- * @brief Adds an element to the DLL.
+ * @brief Adds an element to the DLL.  
  * @param list Pointer to the DLL structure.
  * @param key Key of the element.
  * @param data Data of the element.
