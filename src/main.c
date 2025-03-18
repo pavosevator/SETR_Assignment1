@@ -58,9 +58,28 @@ int main() {
     // Remove an element
     printf("Removing key 2...\n");
     if (MyDLLRemove(&myList, 2) == 0) {
-        printf("Key 2 removed successfully.\n\n");
+        if(MyDLLFind(&myList,2) == NULL){
+            printf("Key 2 removed successfully and find function can not find it.\n\n");
+        }
+  
     } else {
         printf("Failed to remove key 2.\n\n");
+    }
+
+    // Find next node of key 1 after removing key 2
+    DLLNode* nextNodeNew = MyDLLFindNext(&myList, 1);
+    if (nextNodeNew) {
+        printf("Next of key 1: [Key: %d | Data: %s]\n\n", nextNodeNew->key, nextNodeNew->data);
+    } else {
+        printf("Key 1 has no next node.\n\n");
+    }
+
+    // Find next node of key 3 after removing key 2 - should return NULL
+    DLLNode* nextNodeNew1 = MyDLLFindNext(&myList, 3);
+    if (nextNodeNew1) {
+        printf("Next of key 3: [Key: %d | Data: %s]\n\n", nextNodeNew1->key, nextNodeNew1->data);
+    } else {
+        printf("Key 3 has no next node.\n\n");
     }
 
     PrintList(&myList);
