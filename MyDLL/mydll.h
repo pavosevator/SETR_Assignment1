@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
-#define MAX_SIZE 100  // Maximum number of elements
+#define MAX_SIZE 3  // Maximum number of elements
 #define MAX_DATA_SIZE 256 // Maximum size of each element's data array
 
 /**

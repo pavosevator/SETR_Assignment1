@@ -3,6 +3,7 @@
 
 CMakeFiles/dll.dir/src/main.c.obj
  C:/5g FER/embedded/Assignment1/SETR_Assignments/src/main.c
+ C:/5g FER/embedded/Assignment1/SETR_Assignments/MyDLL/mydll.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h
  C:/mingw64/x86_64-w64-mingw32/include/_mingw.h
@@ -21,5 +22,4 @@ CMakeFiles/dll.dir/src/main.c.obj
  C:/mingw64/x86_64-w64-mingw32/include/string.h
  C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl
  C:/mingw64/x86_64-w64-mingw32/include/vadefs.h
- C:/5g FER/embedded/Assignment1/SETR_Assignments/src/mydll.h
 
