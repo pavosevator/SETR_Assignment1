@@ -1,0 +1,6 @@
+C:/5g FER/embedded/Assignment1/SETR_Assignments/build/CMakeFiles/dll.dir
+C:/5g FER/embedded/Assignment1/SETR_Assignments/build/CMakeFiles/edit_cache.dir
+C:/5g FER/embedded/Assignment1/SETR_Assignments/build/CMakeFiles/rebuild_cache.dir
+C:/5g FER/embedded/Assignment1/SETR_Assignments/build/MyDLL/CMakeFiles/MyDLLLib.dir
+C:/5g FER/embedded/Assignment1/SETR_Assignments/build/MyDLL/CMakeFiles/edit_cache.dir
+C:/5g FER/embedded/Assignment1/SETR_Assignments/build/MyDLL/CMakeFiles/rebuild_cache.dir

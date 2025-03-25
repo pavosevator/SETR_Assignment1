@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libMyDLLLib.a CMakeFiles/MyDLLLib.dir/mydll.c.obj
+C:\mingw64\bin\ranlib.exe libMyDLLLib.a
